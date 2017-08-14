@@ -1,3 +1,0 @@
-title = "Table of Contents".center(50)
-chap_1 = "Chapter 1:  Getting started".ljust(30) + "page1".rjust(20)
-chap_2 = "Chapter 2"
