@@ -1,3 +1,0 @@
-puts "Your favorite number:"
-num = gets.chomp
-puts num.to_s + "is a bigger and better number"
