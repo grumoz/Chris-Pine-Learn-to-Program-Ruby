@@ -11,31 +11,28 @@ I = 1
 def roman num
   res = ""
   while num > 0
-  if num >= 1000
-    res += "M" * (num / 1000)
-    num = num % 1000
-    puts num
-  elsif num >= 500
-    res += "D"*(num / 500)
-    num = num % 500
-    puts num
-  elsif num >= 100
-    res += "C"*(num /100)
-    num = num % 100
-    puts num
-  elsif num >= 50
-    res += "L"*(num / 50)
-    num = num % 50
-  elsif num >= 10
-    res += "X"*(num / 10)
-    num = num % 10
-  elsif num >= 5
-    res += "V"*(num / 5)
-    num = num % 5
-  else
-    res += "I"*(num)
-    num = 0
-  end
+    if num >= 1000
+      res += "M" * (num / 1000)
+      num = num % 1000
+    elsif num >= 500
+      res += "D"*(num / 500)
+      num = num % 500
+    elsif num >= 100
+      res += "C"*(num /100)
+      num = num % 100
+    elsif num >= 50
+      res += "L"*(num / 50)
+      num = num % 50
+    elsif num >= 10
+      res += "X"*(num / 10)
+      num = num % 10
+    elsif num >= 5
+      res += "V"*(num / 5)
+      num = num % 5
+    else
+      res += "I"*(num)
+      num = 0
+    end
   end
   res
 end
